@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 dark:bg-[#0f172a] dark:text-slate-100 transition-all duration-300;
+  background-image:
+    radial-gradient(circle at top left, rgba(59,130,246,0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(168,85,247,0.12), transparent 30%);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-blue-500 to-purple-500 rounded-full;
+}
+
+/* Sections */
+
+.section-container {
+  @apply max-w-7xl mx-auto px-6 lg:px-8 py-20 sm:py-28;
+}
+
+.section-title {
+  @apply text-4xl sm:text-5xl font-extrabold text-center mb-4;
+  background: linear-gradient(to right, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-subtitle {
+  @apply text-slate-500 dark:text-slate-400 text-center max-w-3xl mx-auto mb-14 text-lg;
+}
+
+/* Buttons */
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-7 py-3 rounded-full
+  bg-gradient-to-r from-blue-600 to-purple-600
+  text-white font-semibold
+  shadow-lg shadow-blue-500/25
+  transition-all duration-300;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 px-7 py-3 rounded-full
+  border border-slate-300 dark:border-slate-700
+  backdrop-blur-md
+  bg-white/50 dark:bg-slate-800/40
+  font-semibold
+  transition-all duration-300;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  @apply shadow-lg;
+}
+
+/* Modern Cards */
+
+.card {
+  @apply rounded-3xl
+  bg-white/70 dark:bg-slate-900/70
+  backdrop-blur-xl
+  border border-white/20 dark:border-slate-700/50
+  shadow-lg
+  transition-all duration-500;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.08),
+    0 0 30px rgba(59,130,246,0.15);
+}
+
+/* Glass Effect */
+
+.glass {
+  @apply bg-white/10 dark:bg-white/5
+  backdrop-blur-xl
+  border border-white/20;
+}
+
+/* Gradient Text */
+
+.gradient-text {
+  background: linear-gradient(90deg,#3b82f6,#8b5cf6,#ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Inputs */
+
+input,
+textarea {
+  @apply transition-all duration-300;
+}
+
+input:focus,
+textarea:focus {
+  @apply ring-2 ring-blue-500 border-blue-500;
+}
+
+/* Floating Animation */
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Fade Animation */
+
+.fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
