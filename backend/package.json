@@ -4,7 +4,7 @@
   "description": "Backend API for MERN portfolio website",
   "main": "dist/server.js",
   "scripts": {
-    "dev": "npx ts-node src/server.ts",
+    "dev": "npm ts-node src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "seed": "ts-node src/data/seed.ts"
