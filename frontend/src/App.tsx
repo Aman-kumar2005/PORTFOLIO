@@ -13,7 +13,7 @@ function App() {
  const [,setUser] =  useState({})
   useEffect(() => {
     axios
-      .get("http://localhost:5000/")
+      .get("https://portfolio-zsze.onrender.com")
       .then((res) => {
         setUser(res.data);
       })
