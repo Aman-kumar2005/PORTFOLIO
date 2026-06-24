@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         <a href="#hero" className="text-xl font-bold text-primary-600 dark:text-primary-400">
-          JL<span className="text-gray-800 dark:text-gray-100">.dev</span>
+          Aman<span className="text-gray-800 dark:text-gray-100">Kumar</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">
