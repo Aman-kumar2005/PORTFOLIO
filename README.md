@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MERN + TypeScript Developer Portfolio
 
 A full-stack, production-ready developer portfolio built with React, TypeScript, Tailwind CSS, Node.js, Express, and MongoDB. Includes a public-facing portfolio site and a JWT-protected admin dashboard for managing projects and viewing contact messages.
@@ -206,3 +207,7 @@ Password: value of ADMIN_PASSWORD in backend/.env
 ```
 
 Change these immediately after your first login in any real deployment.
+=======
+# PORTFOLIO
+built my own portfolio using MERN-SATCK &amp; Typescript
+>>>>>>> cf54a0f23cc4579eab2ce0748ae367a3f11984de
